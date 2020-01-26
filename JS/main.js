@@ -3,12 +3,12 @@ const filler = document.querySelector("#fill-it");
 
 let spinner = 0;
 
-const revealEdu = function() {
+const revealEdu = function () {
   spinner += 90;
 
   button.style.transform = `rotate(${spinner}deg)`;
 
-  if (button.innerHTML === "+") {
+  if (button.innerHTML === '<i class="fas fa-plus"></i>') {
     filler.innerHTML = `
                     <div class="extra">
                         <h4>Poznań University of Economics and Business</h4>
@@ -16,9 +16,11 @@ const revealEdu = function() {
                         <h5> Engineer - Production Management</h5>
                         <p>English - B1</p>
                     </div>`;
-    button.innerHTML = "~";
+    button.innerHTML = '<i class="fas fa-minus"></i>';
+    window.scrollBy(0, 33 * window.innerHeight / 100);
   } else {
     filler.innerHTML = "";
-    button.innerHTML = "+";
+    button.innerHTML = '<i class="fas fa-plus"></i>';
+    window.scrollBy(0, -100);
   }
 };
