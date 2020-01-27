@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -38,6 +38,7 @@ nav a {
   color: #747474;
   margin: 15px;
   padding: 8px;
+  font-weight: 700;
   font-size: 21px;
   position: relative;
 }
@@ -140,7 +141,7 @@ nav a:hover::before {
 }
 
 .other-info h2 {
-  font-size: 48px;
+  font-size: 42px;
   margin: 5px 10px;
 }
 
@@ -150,7 +151,7 @@ button:focus {
 
 .big-one {
   font-size: 50px;
-  margin-top: 15px;
+  margin: 35px;
   border: 4px solid #ff652f;
   padding: 15px 25px;
   font-weight: bolder;
@@ -209,6 +210,79 @@ footer {
 footer h6 {
   font-size: 19px;
 }
+
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+.animation-rotate {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 16px solid #747474;
+  width: 120px;
+  height: 120px;
+  border-top-color: #ff652f;
+  border-bottom-color: #ff652f;
+  border-radius: 50%;
+  animation: coloredspin 4s linear infinite;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes coloredspin {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-top-color: #ff652f;
+    border-bottom-color: #ff652f;
+  }
+
+
+
+  50% {
+    transform: rotate(360deg) scale(1.05);
+    border-top-color: #ff652f;
+    border-bottom-color: #ff652f;
+  }
+
+
+
+  100% {
+    transform: rotate(720deg) scale(1);
+    border-top-color: #ff652f;
+    border-bottom-color: #ff652f;
+  }
+}
+
 
 @keyframes slifefade {
   100% {
@@ -295,6 +369,7 @@ footer h6 {
     font-size: 19px;
     margin: 10px;
   }
+
   .sep {
     margin-top: 25px;
   }
@@ -308,6 +383,7 @@ footer h6 {
   .skills {
     padding: 5px;
   }
+
   footer h6 {
     font-size: 17px;
   }

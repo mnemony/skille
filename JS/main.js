@@ -11,7 +11,6 @@ const revealEdu = function () {
   button.style.transform = `rotate(${spinner}deg)`;
 
   if (button.innerHTML === '<i class="fas fa-plus"></i>') {
-    console.log('yo')
     filler.innerHTML = `
                     <div class="extra">
                         <h4>Poznań University of Economics and Business</h4>
@@ -20,9 +19,8 @@ const revealEdu = function () {
                         <p>English - B1</p>
                     </div>`;
     button.innerHTML = '<i class="fas fa-minus"></i>';
-    window.scrollBy(0, 33 * window.innerHeight / 100);
+    window.scrollBy(0, 35 * window.innerHeight / 100);
   } else {
-    console.log('no')
     filler.innerHTML = "";
     button.innerHTML = '<i class="fas fa-plus"></i>';
     window.scrollBy(0, -100);
