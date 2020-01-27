@@ -260,7 +260,6 @@ button:focus {
 
 }
 
-/* horizontal line */
 #last-para::before {
   content: '';
   position: absolute;
@@ -491,6 +490,19 @@ footer h6 {
 
   .sep {
     margin-top: 25px;
+  }
+
+  .welcoming h2 {
+    font-size: 30px;
+  }
+
+  .myself-info {
+    padding: 5px;
+
+  }
+
+  .myself-info {
+    font-size: 17px;
   }
 }
 
