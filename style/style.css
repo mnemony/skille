@@ -9,6 +9,7 @@ body {
   padding: 0;
   background-color: #272727;
   font-family: "Roboto Slab", serif;
+  min-height: 100%;
 }
 
 .main-keeper {
@@ -18,6 +19,7 @@ body {
 
 .container {
   width: 90vw;
+  min-height: 85vh;
   margin-left: 5vw;
   margin-right: 5vw;
   padding: 10px;
@@ -26,6 +28,8 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
+/* navbar paramters */
 
 nav {
   margin: 10px;
@@ -195,6 +199,123 @@ button:focus {
   margin-bottom: 3px;
 }
 
+.welcoming {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #747474;
+}
+
+.welcoming h2 {
+  color: #ff652f;
+  font-size: 38px;
+  margin-bottom: 0;
+}
+
+.myself-info {
+  color: #747474;
+  padding: 15px;
+  font-size: 22px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  max-width: 800px;
+  position: relative;
+}
+
+.myself-info::after {
+  content: '';
+  position: absolute;
+  background-color: #ff652f;
+  width: 6px;
+  height: 60%;
+  top: 0;
+  left: -15px;
+
+}
+
+.myself-info::before {
+  content: '';
+  position: absolute;
+  background-color: #ff652f;
+  width: 20%;
+  height: 6px;
+  top: 0;
+  left: -12px;
+}
+
+
+
+#last-para::after {
+  content: '';
+  position: absolute;
+  background-color: #ff652f;
+  width: 6px;
+  height: 50%;
+  bottom: 0;
+  right: 45px;
+
+}
+
+/* horizontal line */
+#last-para::before {
+  content: '';
+  position: absolute;
+  background-color: #ff652f;
+  width: 20%;
+  height: 6px;
+  bottom: 0;
+  right: 115px;
+
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #747474;
+  flex-direction: column;
+}
+
+.contact h3 {
+  font-size: 35px;
+}
+
+.contact i {
+  font-size: 65px;
+  color: #747474;
+  margin: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.contact i:hover {
+  color: #ff652f;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.contact h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.my-mail {
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.my-mail:hover {
+  transform: scale(1.1);
+  color: #ff652f;
+}
+
+
+
+/* footer stuff */
+
 footer {
   display: flex;
   background-color: #ff652f;
@@ -204,12 +325,16 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: auto;
+  right: 0;
   bottom: 0;
+  left: 0;
 }
 
 footer h6 {
   font-size: 19px;
 }
+
+/* loading animations */
 
 .loader {
   position: fixed;
@@ -242,6 +367,9 @@ footer h6 {
   animation: coloredspin 4s linear infinite;
 }
 
+
+/* animations code */
+
 @keyframes fadeOut {
   100% {
     opacity: 0;
@@ -262,27 +390,16 @@ footer h6 {
 @keyframes coloredspin {
   0% {
     transform: rotate(0deg) scale(1);
-    border-top-color: #ff652f;
-    border-bottom-color: #ff652f;
   }
-
-
 
   50% {
-    transform: rotate(360deg) scale(1.05);
-    border-top-color: #ff652f;
-    border-bottom-color: #ff652f;
+    transform: rotate(360deg) scale(1);
   }
-
-
 
   100% {
     transform: rotate(720deg) scale(1);
-    border-top-color: #ff652f;
-    border-bottom-color: #ff652f;
   }
 }
-
 
 @keyframes slifefade {
   100% {
@@ -290,6 +407,8 @@ footer h6 {
     margin-top: 50px;
   }
 }
+
+/* make it responsvie */
 
 @media (max-width: 1554px) {
   .breaking-line {
