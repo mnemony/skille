@@ -1,101 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Skill</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <title>Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
 
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/project.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="loader">
-        <div class="animation-rotate"></div>
+      <div class="animation-rotate"></div>
     </div>
     <div class="main-keeper">
-        <div class="container">
-            <nav>
-                <a id="about" href="./index.html">About</a>
-                <div class="sep"></div>
-                <a id="skills" href="./skill.html">Skills</a>
-                <div class="sep"></div>
-                <a id="projects" href="./projects.html">Projects</a>
-            </nav>
-            <div class="welcoming">
-                <h2>My Projects</h2>
-                <h4>Check them live and see their code</h4>
-            </div>
-
-            <div class="projects-holder">
-                <div class="single-project">
-                    <img src="./images/bank.jpg" alt="">
-                    <div class="icons-inside">
-                        <i onclick=bankGit() class="fab fa-github git-icon"></i>
-                        <i onclick=bankLink() class="fas fa-external-link-alt link-icon"></i>
-                    </div>
-                    <div class="card-text">
-                        <h6>Supreme Bank</h6>
-                        <p>Pseudo-banking app with 3 pages inside: loan calculator, fund calculator and basic API
-                            collector
-                            with "Top Gainers" stock data. Financial calculators also displays suggestions, depend on
-                            money
-                            amount. <br>
-                            Tech: HTML, CSS + Flexbox and pure JS with Axios
-                        </p>
-                    </div>
-
-                </div>
-                <div class="single-project">
-                    <img src="./images/bank.jpg" alt="">
-                    <div class="icons-inside">
-                        <i onclick=bankGit() class="fab fa-github git-icon"></i>
-                        <i onclick=bankLink() class="fas fa-external-link-alt link-icon"></i>
-                    </div>
-                    <div class="card-text">
-                        <h6>Supreme Bank</h6>
-                        <p>Pseudo-banking app with 3 pages inside: loan calculator, fund calculator and basic API
-                            collector
-                            with "Top Gainers" stock data. Financial calculators also displays suggestions, depend on
-                            money
-                            amount. <br>
-                            Tech: HTML, CSS + Flexbox and pure JS with Axios
-                        </p>
-                    </div>
-
-                </div>
-                <div class="single-project">
-                    <img src="./images/bank.jpg" alt="">
-                    <div class="icons-inside">
-                        <i onclick=bankGit() class="fab fa-github git-icon"></i>
-                        <i onclick=bankLink() class="fas fa-external-link-alt link-icon"></i>
-                    </div>
-                    <div class="card-text">
-                        <h6>Supreme Bank</h6>
-                        <p>Pseudo-banking app with 3 pages inside: loan calculator, fund calculator and basic API
-                            collector
-                            with "Top Gainers" stock data. Financial calculators also displays suggestions, depend on
-                            money
-                            amount. <br>
-                            Tech: HTML, CSS + Flexbox and pure JS with Axios
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
+      <div class="container">
+        <nav>
+          <a id="about" href="./index.html">About</a>
+          <div class="sep"></div>
+          <a id="skills" href="./skill.html">Skills</a>
+          <div class="sep"></div>
+          <a id="projects" href="./projects.html">Projects</a>
+        </nav>
+        <div class="welcoming">
+          <h2>My Projects</h2>
+          <h4>Check them live and see their code</h4>
         </div>
+
+        <div class="projects-holder">
+          <div onclick="" class="single-project">
+            <img src="./images/bank.jpg" alt="bankscreen" />
+            <div class="icons-inside">
+              <i onclick="bankGit()" class="fab fa-github git-icon"></i>
+              <i
+                onclick="bankLink()"
+                class="fas fa-external-link-alt link-icon"
+              ></i>
+            </div>
+            <div class="card-text">
+              <h6>Supreme Bank</h6>
+              <p>
+                Pseudo-banking app with 3 pages inside: loan calculator, fund
+                calculator and basic API collector with "Top Gainers" stock
+                data. Financial calculators also displays suggestions, depend on
+                money amount. <br />
+                Tech: HTML, CSS + Flexbox and pure JS with Axios
+              </p>
+            </div>
+          </div>
+          <div onclick="" class="single-project">
+            <img src="./images/panel.jpg" alt="panelscreen" />
+            <div class="icons-inside">
+              <i onclick="prodGit()" class="fab fa-github git-icon"></i>
+              <i
+                onclick="prodLink()"
+                class="fas fa-external-link-alt link-icon"
+              ></i>
+            </div>
+            <div class="card-text">
+              <h6>Production Panel</h6>
+              <p>
+                Simple production management dashboard prototype. Based on cards
+                architecture with possibility to add and remove issue card and
+                sort all of them with doubleclick. There is some charts and
+                progress bars (as decoration)<br />
+                Tech: HTML, CSS + Flexbox and pure JS + Google Charts
+              </p>
+            </div>
+          </div>
+          <div onclick="" class="single-project">
+            <img src="./images/rank.jpg" alt="" />
+            <div class="icons-inside">
+              <i onclick="rankGit()" class="fab fa-github git-icon"></i>
+              <i
+                onclick="rankLink()"
+                class="fas fa-external-link-alt link-icon"
+              ></i>
+            </div>
+            <div class="card-text">
+              <h6>Github Rank</h6>
+              <p>
+                Very simple application collecting data about 7 repos with
+                highest count of stars from Github. You can choose from 11 of
+                the most popular programming languages and compare the
+                popularity of top repositories public API and generates
+                responsive bar chart. <br />
+                Tech: HTML, Bootstrap 4 and pure JS with Canvas.js
+              </p>
+            </div>
+          </div>
+          <div onclick="" class="single-project">
+            <img src="./images/foodCal.jpg" alt="" />
+            <div class="icons-inside">
+              <i onclick="foodGit()" class="fab fa-github git-icon"></i>
+              <i
+                onclick="foodLink()"
+                class="fas fa-external-link-alt link-icon"
+              ></i>
+            </div>
+            <div class="card-text">
+              <h6>Nutrition Converter</h6>
+              <p>
+                Nutrition Validator based on EU food regulations: (EU) No
+                1169/2011 and No 1924/2006. Convert input data of product to RDI
+                (Reference Daily Intake) and reveals posible nutrition claims.
+                You can also generate PDF file with report (not supported on
+                mobiles) <br />
+                Tech: HTML, Bootstrap 4, pure JS with 'html2pdf' and a bit of
+                jQuerry and CSS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
-        <h6>© 2020 Copyright: Maksym Przewoźny</h6>
+      <h6>© 2020 Copyright: Maksym Przewoźny</h6>
     </footer>
     <script src="./JS/loader.js"></script>
     <script src="./JS/linker.js"></script>
-</body>
-
+  </body>
 </html>
