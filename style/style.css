@@ -224,26 +224,36 @@ button:focus {
   align-self: center;
   max-width: 800px;
   position: relative;
+  border: 6px solid #ff652f;
 }
 
+.myself-info::before,
 .myself-info::after {
-  content: "";
+  content: " ";
   position: absolute;
-  background-color: #ff652f;
-  width: 6px;
-  height: 60%;
-  top: 0;
-  left: -15px;
+  width: 100px;
+  height: 9px;
+  background: #272727;
+  transform: skewX(45deg);
+  transition: 0.4s linear;
 }
 
 .myself-info::before {
-  content: "";
-  position: absolute;
-  background-color: #ff652f;
-  width: 50%;
-  height: 6px;
-  top: 0;
-  left: -12px;
+  top: -7px;
+  left: 10%;
+}
+
+.myself-info::after {
+  bottom: -7px;
+  right: 10%;
+}
+
+.myself-info:hover::before {
+  left: 80%;
+}
+
+.myself-info:hover::after {
+  right: 80%;
 }
 
 .contact {
@@ -284,6 +294,115 @@ button:focus {
 .my-mail:hover {
   transform: scale(1.1);
   color: #ff652f;
+}
+
+/* project page */
+
+.projects-holder {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.single-project {
+  height: 390px;
+  width: 300px;
+  margin: 20px;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  background: linear-gradient(180deg, #ff652f 60%, #747474 50%);
+}
+
+.single-project::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background-color: #ff652f;
+  border-radius: 8px;
+  z-index: -1;
+  transform: skew(-1deg, -1deg);
+  transition: all 0.4s;
+}
+
+.single-project img {
+  border-radius: 8px 8px 0 0;
+  max-width: 300px;
+  vertical-align: top;
+  transition: all 0.4s;
+}
+
+.card-text {
+  background-color: #747474;
+}
+
+.single-project h6 {
+  color: #ff652f;
+  margin: 0px;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.single-project p {
+  padding: 0 10px 10px 10px;
+  color: #272727;
+  font-size: 12px;
+  text-align: left;
+  height: 115px;
+  margin-bottom: 7px;
+  margin-top: 3px;
+}
+
+.single-project:hover img {
+  opacity: 0.4;
+  filter: grayscale(100%);
+}
+
+.single-project:hover::before {
+  transform: skew(1deg, 1deg);
+}
+
+.icons-inside i:hover {
+  cursor: pointer;
+}
+
+.single-project:hover .icons-inside i {
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+
+.icons-inside i {
+  transform: scale(0);
+  transition: transform 0.4s;
+}
+
+.icons-inside i {
+  position: absolute;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #272727;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ff652f;
+}
+
+.git-icon {
+  top: 22%;
+  left: 20%;
+}
+
+.link-icon {
+  top: 22%;
+  right: 20%;
 }
 
 /* footer stuff */
@@ -464,6 +583,14 @@ footer h6 {
 
   .myself-info {
     font-size: 17px;
+  }
+
+  .myself-info:hover::before {
+    left: 60%;
+  }
+
+  .myself-info:hover::after {
+    right: 60%;
   }
 }
 
