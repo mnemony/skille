@@ -460,7 +460,7 @@ footer h6 {
   border-top-color: #ff652f;
   border-bottom-color: #ff652f;
   border-radius: 50%;
-  animation: coloredspin 3s linear infinite;
+  animation: coloredspin 2s linear infinite;
 }
 
 /* animations code */
@@ -479,10 +479,12 @@ footer h6 {
 
   50% {
     transform: rotate(720deg) scale(1.11);
+    border-color: #ff652f;
   }
 
   100% {
     transform: rotate(1440deg) scale(1.2);
+    border-color: #ff652f;
   }
 }
 
