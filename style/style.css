@@ -357,12 +357,12 @@ button:focus {
 }
 
 .single-project p {
-  padding: 5px 12px 12px 12px;
+  padding: 5px 12px 3px 12px;
   color: #747474;
   font-size: 13px;
   font-weight: 700;
-  text-align: left;
-  height: 115px;
+  text-align: justify;
+  height: 165px;
   margin-bottom: 7px;
   margin-top: 3px;
 }
