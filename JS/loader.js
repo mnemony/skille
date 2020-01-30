@@ -1,6 +1,6 @@
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   const loader = document.querySelector(".loader");
-  this.setTimeout(function() {
+  this.setTimeout(function () {
     loader.className += " hidden";
-  }, 550);
+  }, 500);
 });

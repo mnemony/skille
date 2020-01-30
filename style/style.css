@@ -479,7 +479,9 @@ footer h6 {
 
   50% {
     transform: rotate(720deg) scale(1.11);
-    border-color: #ff652f;
+    border: 16px solid #747474;
+    border-top-color: #ff652f;
+    border-bottom-color: #ff652f;
   }
 
   100% {
