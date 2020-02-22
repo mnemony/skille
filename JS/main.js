@@ -13,10 +13,10 @@ const revealEdu = function () {
   if (button.innerHTML === '<i class="fas fa-plus"></i>') {
     filler.innerHTML = `
                     <div class="extra">
-                        <h4>Poznań University of Economics and Business</h4>
-                        <h5> Master - Commodity Science</h5>
-                        <h5> Engineer - Production Management</h5>
-                        <p>English - B1</p>
+                        <h4>Uniwersytet Ekonomiczny w Poznaniu</h4>
+                        <h5> Magister - Towaroznawstwo</h5>
+                        <h5> Inżynier - Zarządzanie i Inżynieria Produkcji</h5>
+                        <p>Angielski - B1</p>
                     </div>`;
     button.innerHTML = '<i class="fas fa-minus"></i>';
     window.scrollBy(0, 35 * window.innerHeight / 100);
