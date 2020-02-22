@@ -145,6 +145,7 @@ nav a:hover::before {
 }
 
 .other-info h2 {
+  text-align: center;
   font-size: 42px;
   margin: 5px 10px;
 }
@@ -575,12 +576,12 @@ footer h6 {
   }
 
   nav a {
-    font-size: 19px;
-    margin: 10px;
+    font-size: 17px;
+    margin: 3px;
   }
 
   .sep {
-    margin-top: 25px;
+    margin-top: 18px;
   }
 
   .welcoming h2 {
@@ -615,5 +616,14 @@ footer h6 {
 
   footer h6 {
     font-size: 17px;
+  }
+
+  nav a {
+    font-size: 15px;
+    margin: 2px;
+  }
+
+  .sep {
+    margin-top: 15px;
   }
 }
