@@ -10,9 +10,9 @@
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag('js', new Date());
+    gtag("js", new Date());
 
-    gtag('config', 'UA-157434650-1');
+    gtag("config", "UA-157434650-1");
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +27,6 @@
 </head>
 
 <body>
-
   <div class="main-keeper">
     <div class="container">
       <nav>
@@ -44,6 +43,23 @@
 
       <div class="projects-holder">
         <div onclick="" class="single-project">
+          <img src="./images/claims.jpg" alt="bankscreen" />
+          <div class="icons-inside">
+            <i onclick="validLink()" class="fas fa-external-link-alt link-icon"></i>
+          </div>
+          <div class="card-text">
+            <h6>EU claim validator</h6>
+            <p>
+              Ulepszona wersja wcześniejszego projektu. Na podstawie
+              otrzymanych danych wartości odżywczych, generuje rapot o RDI i
+              dostępnych oświadczeniach żywieniowych zgodnych z prawem UE.
+              <br />
+              <br />
+              Tech: HTML, CSS + Flexbox i czysty JS + 'html2pdf'.
+            </p>
+          </div>
+        </div>
+        <div onclick="" class="single-project">
           <img src="./images/bank.jpg" alt="bankscreen" />
           <div class="icons-inside">
             <i onclick="bankGit()" class="fab fa-github git-icon"></i>
@@ -52,8 +68,9 @@
           <div class="card-text">
             <h6>Supreme Bank</h6>
             <p>
-              Aplikacja pseudo bankowa z trzema sekcjami: kalkulatorem pożyczek, kalkulatorem funduszu oszczędnościowego
-              i kolektora API ze spółkami giełdowymi o najwyższym wzroście. <br />
+              Aplikacja pseudo bankowa z trzema sekcjami: kalkulatorem
+              pożyczek, kalkulatorem funduszu oszczędnościowego i kolektora
+              API ze spółkami giełdowymi o najwyższym wzroście. <br />
               <br />
               Tech: HTML, CSS + Flexbox i czysty JS z Axios
             </p>
@@ -68,8 +85,10 @@
           <div class="card-text">
             <h6>Nutrition Converter</h6>
             <p>
-              Walidator wartości odżywczych oparty na rozporządzeniach unijnych (1169/2011 i 1924/2006). Pozwala
-              przekształcić dane na wartość RDI i wykazuje dostępne dla produktu oświadczenia żywieniowe. <br><br>
+              Walidator wartości odżywczych oparty na rozporządzeniach
+              unijnych (1169/2011 i 1924/2006). Pozwala przekształcić dane na
+              wartość RDI i wykazuje dostępne dla produktu oświadczenia
+              żywieniowe. <br /><br />
 
               Tech: HTML, Bootstrap 4, czysty JS z 'html2pdf' i odrobnia
               jQuerry i CSS
@@ -85,9 +104,11 @@
           <div class="card-text">
             <h6>Production Panel</h6>
             <p>
-              Prosty panel zarządzania produkcją. Oparty na strukturze kart, pozwala dodawać nowe sprawy i nadawać im
-              priorytet za pomocą podwójnego kliknięcia. W pełni responsywny, zawiera wykresy Googla.
-              <br /><br>
+              Prosty panel zarządzania produkcją. Oparty na strukturze kart,
+              pozwala dodawać nowe sprawy i nadawać im priorytet za pomocą
+              podwójnego kliknięcia. W pełni responsywny, zawiera wykresy
+              Googla.
+              <br /><br />
               Tech: HTML, CSS + Flexbox i czysty JS + Google Charts
             </p>
           </div>
@@ -101,21 +122,21 @@
           <div class="card-text">
             <h6>Github Rank</h6>
             <p>
-              Prosta aplikacja podbierająca dane o najpopularniejszych repozytoriach na githubie (w oparciu o ilość
-              gwiazd). Możliwy jest wybór spośród 11 popularnych języków programowania. Po pobraniu danych
-              generowany jest wykres porównujący popularność repozytoriów. <br />
+              Prosta aplikacja podbierająca dane o najpopularniejszych
+              repozytoriach na githubie (w oparciu o ilość gwiazd). Możliwy
+              jest wybór spośród 11 popularnych języków programowania. Po
+              pobraniu danych generowany jest wykres porównujący popularność
+              repozytoriów. <br />
               Tech: HTML, Bootstrap 4 i czysty JS z Charts.js
             </p>
           </div>
         </div>
-
       </div>
     </div>
   </div>
   <footer>
     <h6>© 2020 Copyright: Maksym Przewoźny</h6>
   </footer>
-
 
   <script src="./JS/linker.js"></script>
 </body>

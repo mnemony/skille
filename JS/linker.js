@@ -39,3 +39,7 @@ function rankLink() {
 function rankGit() {
     window.open("https://github.com/mnemony/githubRank", "_blank");
 }
+
+function validLink() {
+    window.open("https://nutritionclaims.com/", "_blank");
+}
